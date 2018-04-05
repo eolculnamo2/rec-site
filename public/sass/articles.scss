@@ -1,0 +1,58 @@
+@import 'variables'; 
+@import 'header';
+// Run Build: 
+// sass sass/articles.scss style.css
+
+.article-title{
+    color: $rec-Blue;
+    margin-bottom: 0;
+    @media screen and (max-width: $bp-tablet) {
+        padding: 20px;
+    }
+}
+.author{
+    text-align: right;
+    margin: 0;
+}
+.article-image {
+    width: 400px;
+    float: right;
+    margin: 15px 0 15px 15px;
+    border: 2px solid $rec-Tan;
+    @media screen and (max-width: $bp-tablet) {
+        float: none;
+        width: 95vw;
+        display: block;
+        margin: auto;
+    }
+}
+.article-body{
+    width: 75%;
+    display: block; 
+    margin: auto;
+    line-height: 1.5;
+    font-family: $font1;
+    @media screen and (max-width: $bp-tablet) {
+        width: 100vw;
+        margin: 0;
+        p{
+            padding: 20px;
+        }
+    }
+
+    h3{
+        background-color: $rec-Tan;
+        padding: 10px;
+        color: $rec-Blue;
+        @media screen and (max-width: $bp-tablet) {
+           padding: 20px;
+        }
+    }
+}
+.line-break{
+    color: $rec-Brown;
+    height: 2px;
+    border: 1px solid $rec-Brown;
+    background-color: $rec-Brown;
+    margin: 15px 0;
+}

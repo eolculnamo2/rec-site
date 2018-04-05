@@ -1,0 +1,199 @@
+body {
+  margin: 0; }
+
+nav {
+  background-color: #0359AE;
+  color: #ebe5d9; }
+  nav .help-links {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    list-style-type: circle;
+    padding: 10px;
+    font-weight: 600;
+    margin: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    cursor: pointer; }
+    @media screen and (max-width: 900px) {
+      nav .help-links {
+        width: 100%;
+        padding: 0;
+        margin: 0; } }
+    nav .help-links li:hover {
+      color: #CC8A56; }
+
+header {
+  min-height: 10vh;
+  background: #14B09B;
+  margin: 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between; }
+  header h1 {
+    flex-grow: 3;
+    margin: 0;
+    padding: 25px;
+    font-family: cursive; }
+  header .mobile-menu {
+    float: right;
+    background: url("../assets/mobile.svg");
+    background-size: cover;
+    background-position: center;
+    margin: 25px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer; }
+    @media screen and (min-width: 900px) {
+      header .mobile-menu {
+        display: none; } }
+  header ul {
+    padding: 25px;
+    flex-grow: 3;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+    @media screen and (max-width: 900px) {
+      header ul {
+        display: none; } }
+  header li:hover {
+    cursor: pointer;
+    color: #ebe5d9; }
+
+footer {
+  min-height: 10vh;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0359AE;
+  color: #ebe5d9; }
+
+.article-title {
+  color: #0359AE;
+  margin-bottom: 0; }
+  @media screen and (max-width: 900px) {
+    .article-title {
+      padding: 20px; } }
+
+.author {
+  text-align: right;
+  margin: 0; }
+
+.article-image {
+  width: 400px;
+  float: right;
+  margin: 15px 0 15px 15px;
+  border: 2px solid #ebe5d9; }
+  @media screen and (max-width: 900px) {
+    .article-image {
+      float: none;
+      width: 95vw;
+      display: block;
+      margin: auto; } }
+
+.article-body {
+  width: 75%;
+  display: block;
+  margin: auto;
+  line-height: 1.5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+  @media screen and (max-width: 900px) {
+    .article-body {
+      width: 100vw;
+      margin: 0; }
+      .article-body p {
+        padding: 20px; } }
+  .article-body h3 {
+    background-color: #ebe5d9;
+    padding: 10px;
+    color: #0359AE; }
+    @media screen and (max-width: 900px) {
+      .article-body h3 {
+        padding: 20px; } }
+
+.line-break {
+  color: #CC8A56;
+  height: 2px;
+  border: 1px solid #CC8A56;
+  background-color: #CC8A56;
+  margin: 15px 0; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+.content {
+  min-height: 75vh; }
+
+.white-space {
+  height: 10vh; }
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  overflow-y: hidden;
+  background: url("../assets/home-hero-img.jpeg");
+  background-size: cover;
+  background-position: center; }
+
+.contact-title {
+  text-align: center;
+  background-color: #0359AE;
+  color: white;
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase; }
+
+.form-flex {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #CC8A56;
+  padding: 10px 0; }
+  .form-flex div {
+    margin: auto; }
+    .form-flex div label {
+      color: white;
+      display: block;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+  .form-flex button {
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    border: 1px solid #0359AE;
+    background-color: #0359AE;
+    color: white;
+    cursor: pointer;
+    width: 175px;
+    border-radius: 3px;
+    font-size: 18px; }
+    .form-flex button:hover {
+      background-color: #14B09B; }
+
+.form-input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black; }
+  .form-input:focus {
+    border: 1px solid #14B09B;
+    animation-duration: 0.5s; }
+
+.form-message {
+  width: 100%;
+  outline: none;
+  text-align: left; }
+  .form-message:focus {
+    border: 1px solid #14B09B; }
+
+/*# sourceMappingURL=style.css.map */

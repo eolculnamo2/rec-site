@@ -1,0 +1,90 @@
+@import 'variables';
+
+body{
+    margin: 0;
+}
+nav{
+    background-color: $rec-Blue;
+    color: $rec-Tan;
+
+    .help-links{
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+        list-style-type: circle;
+        padding: 10px;
+        font-weight: 600;
+        margin: 0;
+        font-family: $font1;
+        cursor: pointer;
+
+        @media screen and (max-width: $bp-tablet){
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        li:hover{
+            color: $rec-Brown;
+        }
+    }
+
+}
+header{
+    min-height: 10vh;
+    background: $rec-Green;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+        flex-grow: 3;
+        margin: 0;
+        padding: 25px;
+        font-family: cursive;
+       //text-transform: uppercase;
+    }
+    .mobile-menu{
+        float: right;
+        background: url("../assets/mobile.svg");
+        background-size: cover;
+        background-position: center;
+        margin: 25px;
+        width: 40px; 
+        height: 40px;
+        cursor: pointer;
+        @media screen and (min-width: $bp-tablet) {
+            display: none;
+        }
+    }
+    ul{
+        padding: 25px;
+        flex-grow: 3;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-content: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: $font1;
+        @media screen and (max-width: $bp-tablet){
+            display: none;
+        }
+    }
+    li:hover{
+        cursor: pointer;
+        color: $rec-Tan;
+    }
+}
+footer{
+    min-height: 10vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $rec-Blue;
+    color: $rec-Tan;
+}
